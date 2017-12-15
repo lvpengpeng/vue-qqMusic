@@ -9,7 +9,7 @@
 </template>
 
 <script>
-
+  import axios from 'axios'
   import MHeader from './components/Mheader.vue';
   import Tab from './components/tab.vue'
   export default {
@@ -17,7 +17,15 @@
   components:{
     MHeader,
     Tab
-  }
+  },
+    created() {
+      axios.get('/api/goods').then(function (response) {
+        console.log(response);
+      })
+        .catch(function (error) {
+          console.log(error);
+        });
+    }
 }
 </script>
 

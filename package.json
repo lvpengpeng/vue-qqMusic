@@ -12,6 +12,7 @@
     "mockdev": "npm run mock & npm run dev"
   },
   "dependencies": {
+    "axios": "^0.17.1",
     "jsonp": "^0.2.1",
     "mint-ui": "^2.2.10",
     "vue": "^2.5.2",
